@@ -13,34 +13,41 @@
 
 <body>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <meta charset="UTF-8">
+       <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+       <title>My First GitHub Page</title>
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+       <!-- Custom CSS-->
+       <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="about.html">AI Video Maker</a>
-            <div class="navbar-nav">                    
-                  <a class="nav-link" href="index.html">Home</a>                
-                 <a class="nav-link" href="about.html">About
-                 <a class="nav-link" href="contact.html">Contact</a>
-         </div>
-          <a class="navbar-brand ms-auto" href="about.html">
-            <img src="C:\Users\Topo\OneDrive\Desktop\my-github page\ICE.png" alt="ICE MAKERS MASTER Logo" style="height: 60px;"
+            <a class="navbar-brand" href="index.html">Bastion Menswear</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html#services">Services</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html#products">Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-     </nav>
-     
-<main class="contact my-5">
-  <h2>About Our Technology</h2>
-  <p>This website uses Github pages for hosting and Bootstrap to meet all device principles to allow access.</p>
-  <p>Our mission is to make video creation accessible to everyone through simple text prompts.</p>
-  
-</main>
-
-
-<footer>
-    <p>&copy; 2025 Topo Molatlhiwa</p>
- </footer>
- 
- <!-- Bootstrap JS and dependencies -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+    </nav>
+</header>

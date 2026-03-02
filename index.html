@@ -16,65 +16,28 @@
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-              <a class="navbar-brand" href="index.html">My AI Video Maker</a>
+            <a class="navbar-brand" href="index.html">Bastion Menswear</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-             <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar=nav">
-                <li class="nav-item">
-                    
-                  <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav item">                  
-                 <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                 <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-            </ul>
-         </div>
-         <a class="navbar-brand ms-auto" href="index.html">
-            <img src="C:\Users\Topo\OneDrive\Desktop\my-github page\ICE.png" alt="ICE MAKERS MASTER Logo" style="height: 60px;"
-         </a>
-      </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html#services">Services</a></li>
+                            <li><a class="dropdown-item" href="portfolio.html#products">Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-   </header>
-
-
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Generate Video from Text</h1>
-               <p class="lead">Enter your script below to generate an AI-powered video.</p>
-                <form id="videoForm" class="p-4 border rounded bg-light shadow-sm">
-                 <div class="mb-3">
-                 <label for="videoScript" class="form-label">Your Script</label>
-                 <textarea class="form-control" id="videoScript" rows="5" placeholder="Once upon a time in a in a galaxy of whispered secrets..."></textarea>
-             </div>
-             <button type="submit" class="btn btn-primary btn-lg">Generate Video</button>
-          </form>
-          <div id="downloadsection" class="p-4 border rounded" style="background-color: #00152b;">
-                <h3>Your Video is Ready!</h3>
-                <p>Click the button below to save it to your device.</p>
-
-                <a href="#" class="btn btn-success btn-lg" download="my-ai-video.mp4">
-                     DOWNLOAD VIDEO (MP4) 
-                </a>
-          </div>
-       </div>
-    </div>
- </main>
-
- <footer class="text-center py-4 bg-4 bg-light border-top">
-       <p>&copy; 2025 AI Video Generator. Build with Bootstrap & Github Pages.</p>
- </footer>
-
- <!-- Bootstrap JS and dependencies -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+</header>
