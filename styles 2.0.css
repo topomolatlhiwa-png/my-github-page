@@ -1,0 +1,136 @@
+/* 1. DARK LUXURY PALETTE */
+:root {
+    --obsidian: #080808;     /* Deepest Black */
+    --charcoal: #121212;     /* Card/Section Background */
+    --slate-grey: #1c1c1c;   /* Borders and Dividers */
+    --accent-silver: #e0e0e0; /* Primary Text */
+    --muted-gold: #c5a059;   /* Optional Accent for Links/Buttons */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--obsidian);
+    color: var(--accent-silver);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* 2. NAVIGATION (Seamless Obsidian) */
+.navbar {
+    background-color: var(--obsidian) !important;
+    border-bottom: 1px solid var(--slate-grey);
+    padding: 1.5rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #888 !important;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+}
+
+.dropdown-menu {
+    background-color: var(--charcoal);
+    border: 1px solid var(--slate-grey);
+    border-radius: 0;
+}
+
+.dropdown-item {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.dropdown-item:hover {
+    background-color: var(--slate-grey);
+    color: #ffffff;
+}
+
+/* 3. PRODUCT CARDS (Charcoal on Obsidian) */
+.card {
+    background-color: var(--charcoal);
+    border: 1px solid var(--slate-grey);
+    border-radius: 0; /* Sharp corners for high-end look */
+    transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #555; /* Subtle highlight */
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(85%) contrast(110%); /* Moody image effect */
+    transition: 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    filter: brightness(100%);
+}
+
+.card-body {
+    padding: 20px 10px;
+}
+
+.card-body h6 {
+    color: #ffffff;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* 4. SECTIONS & SPACING */
+section {
+    padding: 100px 0;
+    border-top: 1px solid var(--slate-grey);
+}
+
+/* Adjusting the Bootstrap 'bg-light' to be a 'bg-dark' instead */
+.bg-light {
+    background-color: #0c0c0c !important; 
+}
+
+/* 5. LUXURY BUTTONS */
+.btn-dark {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    padding: 12px 30px;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #ffffff;
+    color: var(--obsidian);
+}
+
+/* 6. MINIMAL FOOTER */
+footer {
+    background-color: var(--obsidian);
+    border-top: 1px solid var(--slate-grey);
+    color: #555;
+}
+
+.text-muted {
+    color: #555 !important;
+}
